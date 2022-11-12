@@ -12,8 +12,7 @@ extern Motor intake;
 extern Motor roller;
 
 // PNEUMATICS
-extern ADIPort trigger1;
-extern ADIPort trigger2;
+extern ADIPort trigger;
 
 // MISC
 extern Imu gyro;
@@ -24,15 +23,14 @@ extern Controller controller;
 #define wheelDiameter 4
 
 // PORTS
-#define frontRightPort 1
-#define backRightPort 2
-#define frontLeftPort 3
-#define backLeftPort 4
+#define frontRightPort 11
+#define backRightPort 9
+#define frontLeftPort 15
+#define backLeftPort 10
 
-#define intakePort 15
+#define intakePort 3
 #define flywheelPort1 12
 #define flywheelPort2 13
-#define rollerPort 11
+#define rollerPort 14
 
-#define triggerPort1 'F'
-#define triggerPort2 'H'
+#define triggerPort 'F'

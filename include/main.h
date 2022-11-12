@@ -83,7 +83,9 @@ extern "C"
 #include "subsystemHeaders/flywheel.hpp"
 #include "subsystemHeaders/drive.hpp"
 #include "subsystemHeaders/intake.hpp"
+#include "subsystemHeaders/roller.hpp"
 #include "subsystemHeaders/globals.hpp"
+#include "subsystemHeaders/trigger.hpp"
 
 /**
  * You can add C++-only headers here

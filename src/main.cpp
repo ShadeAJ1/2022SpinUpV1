@@ -9,12 +9,12 @@
 Drive chassis(
     // Left Chassis Ports (negative port will reverse it!)
     //   the first port is the sensored port (when trackers are not used!)
-    {-10, -9}
+    {-17, -8}
 
     // Right Chassis Ports (negative port will reverse it!)
     //   the first port is the sensored port (when trackers are not used!)
     ,
-    {4, 3}
+    {11, 6}
 
     // IMU Port
     ,
@@ -81,8 +81,7 @@ void initialize()
 
   // Autonomous Selector using LLEMU
   ez::as::auton_selector.add_autons({
-      Auton("Right Auto", rightWinPointAuto),
-      Auton("Left Auto", leftWinPointAuto),
+      Auton("Roller Auto\n\nRoller to roll the the roll.", rollerAuto),
 
       // Example Autons
       Auton("Example Drive\n\nDrive forward and come back.", drive_example),
@@ -184,6 +183,8 @@ void opcontrol()
 
     controlIntake();
     controlFlywheel();
+    controlRoller();
+    controlTrigger();
 
     // std::cout << " New Gyro Heading: ";
     // std::cout << (chassis.imu.get_heading());

@@ -16,7 +16,7 @@ void rightWinPointAuto();
 void leftWinPointAuto();
 void middleWinPointAuto();
 
-void spinupRightAuto();
+void rollerAuto();
 
 void default_constants();
 void one_mogo_constants();
