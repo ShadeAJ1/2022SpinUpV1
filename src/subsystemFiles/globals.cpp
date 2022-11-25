@@ -8,8 +8,8 @@ Motor backRight(backRightPort, E_MOTOR_GEARSET_06, true);
 
 Motor flywheel1(flywheelPort1, E_MOTOR_GEARSET_06, false);
 Motor flywheel2(flywheelPort2, E_MOTOR_GEARSET_06, false);
-Motor intake(intakePort, E_MOTOR_GEARSET_06);
-Motor roller(rollerPort, E_MOTOR_GEARSET_18);
+Motor intake1(intakePort1, E_MOTOR_GEARSET_06);
+Motor intake2(intakePort2, E_MOTOR_GEARSET_06);
 
 ADIPort trigger(triggerPort, ADI_DIGITAL_OUT);
 

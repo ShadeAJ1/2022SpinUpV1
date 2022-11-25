@@ -28,10 +28,8 @@ void setDriveCoast()
 void resetDriveEncoders()
 {
     frontLeft.tare_position();
-
     backLeft.tare_position();
     frontRight.tare_position();
-
     backRight.tare_position();
 }
 
@@ -50,11 +48,10 @@ void moveFeet(double feet, double voltage)
     int direction = abs(units) / units;
 
     resetDriveEncoders();
-    chassis.imu.tare_heading();
 
     while (avgDrivePosition() < abs(units))
     {
-        setDrive(voltage * direction - chassis.imu.get_heading(), voltage * direction + chassis.imu.get_heading());
+        setDrive(voltage * direction, voltage * direction);
         pros::delay(10);
     }
 

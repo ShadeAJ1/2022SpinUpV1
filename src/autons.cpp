@@ -184,7 +184,7 @@ void rollerAuto()
 {
   setDrive(-80, -80);
   pros::delay(500);
-  setRoller(127);
+  setRoller(-127);
   pros::delay(500);
   setRoller(0);
   setDrive(0, 0);

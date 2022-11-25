@@ -8,8 +8,8 @@ extern Motor backLeft;
 
 extern Motor flywheel1;
 extern Motor flywheel2;
-extern Motor intake;
-extern Motor roller;
+extern Motor intake1;
+extern Motor intake2;
 
 // PNEUMATICS
 extern ADIPort trigger;
@@ -28,9 +28,9 @@ extern Controller controller;
 #define frontLeftPort 15
 #define backLeftPort 10
 
-#define intakePort 3
+#define intakePort1 3
+#define intakePort2 14
 #define flywheelPort1 12
 #define flywheelPort2 13
-#define rollerPort 14
 
 #define triggerPort 'F'

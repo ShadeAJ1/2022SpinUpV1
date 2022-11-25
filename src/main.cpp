@@ -23,6 +23,7 @@ Drive chassis(
     // Wheel Diameter (Remember, 4" wheels are actually 4.125!)
     //    (or tracking wheel diameter)
     ,
+
     4
 
     // Cartridge RPM
@@ -189,10 +190,42 @@ void opcontrol()
     // std::cout << " New Gyro Heading: ";
     // std::cout << (chassis.imu.get_heading());
 
-    // if (master.get_digital_new_press(DIGITAL_UP))
-    // {
-    //   autonomous();
-    // }
+    if (master.get_digital_new_press(DIGITAL_UP))
+    {
+      autonomous();
+
+      // moveFeet(1,80);
+      //  resetDriveEncoders();
+      //  std :: cout(avgDrivePosition()); // cout it
+      //  setDrive(80,80); // how long does it tke to move one foot forward
+      //  pros :: delay(1000);
+      //  setDrive(0,0);
+      //  std :: cout (avgDrivePosition());
+      //  pros :: delay(5000);
+      //  resetDriveEncoders();
+      //  std :: cout (avgDrivePosition());
+      //  setDrive(80,80); // how long does it tke to move one foot forward
+      //  pros :: delay(750);
+      //  setDrive(0,0);
+      //  std :: cout (avgDrivePosition());
+      //  pros :: delay(5000);
+      //  resetDriveEncoders();
+      //  std :: cout (avgDrivePosition());
+      //  setDrive(80,80); // how long does it tke to move one foot forward
+      //  pros :: delay(500);
+      //  setDrive(0,0);
+      //  std :: cout (avgDrivePosition());
+      //  pros :: delay(10000);
+      //  // turn testing aim for a full 90 degree turn left
+
+      // for(i = 500; i < 1000; i += 250)
+      // {
+      //   setDrive(-60,60);
+      //   pros :: delay(i);
+      //   setDrive(0,0);
+      //   pros :: delay(5000)
+      // }
+    }
 
     pros::delay(ez::util::DELAY_TIME); // This is used for timer calculations!  Keep this ez::util::DELAY_TIME
   }

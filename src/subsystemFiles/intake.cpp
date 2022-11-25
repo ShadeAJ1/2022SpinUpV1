@@ -2,7 +2,8 @@
 
 void setIntake(int power)
 {
-    intake = power;
+    intake1 = power;
+    intake2 = -power;
 }
 
 void controlIntake()

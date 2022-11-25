@@ -2,7 +2,6 @@
 
 void setRoller(int power)
 {
-    roller = power;
 }
 
 void controlRoller()
