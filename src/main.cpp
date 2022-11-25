@@ -100,8 +100,8 @@ void initialize()
 
   flywheel1.set_brake_mode(MOTOR_BRAKE_COAST);
   flywheel2.set_brake_mode(MOTOR_BRAKE_COAST);
-  intake.set_brake_mode(MOTOR_BRAKE_COAST);
-  roller.set_brake_mode(MOTOR_BRAKE_BRAKE);
+  intake1.set_brake_mode(MOTOR_BRAKE_COAST);
+  intake2.set_brake_mode(MOTOR_BRAKE_COAST);
 }
 
 /**
