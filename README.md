@@ -1,5 +1,5 @@
-# EZ-Template-Example
-### This is the example project for the EZ-Template library.  
+# 2022 VEX Spin Up
+### Made using the EZ-Template library.  
 
 EZ-Template is a simple plug-and-play PROS template that handles drive base functions for VEX robots.  
 
